@@ -17,7 +17,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ResourceBundle;
-//Leang Menghang
+//Leang Menghangg
 public class LoggedInController implements Initializable {
     @FXML
     private Button cancel_button;

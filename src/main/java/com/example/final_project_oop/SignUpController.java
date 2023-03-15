@@ -17,7 +17,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
-//Leang Menghang
+//Leang Menghangg
 public class SignUpController implements Initializable {
 
     @FXML
