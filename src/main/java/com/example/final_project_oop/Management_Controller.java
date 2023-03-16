@@ -3,8 +3,11 @@ package com.example.final_project_oop;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 import java.awt.event.ActionEvent;
 import java.io.IOException;
@@ -57,5 +60,14 @@ public class Management_Controller {
         FXMLLoader fxmlLoader = new FXMLLoader(Management.class.getResource("profile.fxml"));
         borderPane.getChildren().remove(borderPane.getCenter()); ////remove existing fxml from center.
         borderPane.setCenter(fxmlLoader.load());
+    }
+
+    private Stage stage;
+    public void onLogOutClick(javafx.event.ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Calendar.class.getResource("Log_In.fxml"));
+        stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+        stage.show();
     }
 }
