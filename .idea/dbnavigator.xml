@@ -12,7 +12,7 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="3f11942b-3e46-424c-8cff-f77918d7fbe3">
+    <connection id="84216d5a-0243-4ba6-a556-11b7b468a0a9">
       <console name="MysqlConnection" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
@@ -20,7 +20,29 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="84216d5a-0243-4ba6-a556-11b7b468a0a9" object-ref="schemas/health_care/tables/account_user" />
+      <object connection-id="84216d5a-0243-4ba6-a556-11b7b468a0a9" object-ref="schemas/health_care/tables/contact_us" />
+    </open-files>
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="84216d5a-0243-4ba6-a556-11b7b468a0a9" dataset="health_care.contact_us" active-filter-id="">
+      <filter id="662df1b0-3e1e-4070-9986-9409c4d52a36" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="ID" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="84216d5a-0243-4ba6-a556-11b7b468a0a9" dataset="health_care.account_user" active-filter-id="EMPTY_FILTER" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -28,7 +50,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="3f11942b-3e46-424c-8cff-f77918d7fbe3" active="true" signed="true">
+      <connection id="84216d5a-0243-4ba6-a556-11b7b468a0a9" active="true" signed="true">
         <database>
           <name value="MysqlConnection" />
           <description value="" />
