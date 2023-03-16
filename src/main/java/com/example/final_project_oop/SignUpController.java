@@ -98,46 +98,24 @@ public class SignUpController implements Initializable {
     }
     public void registerUser() {
         DBConnection connectNow = new DBConnection();
-        Connection connectionDB = connectNow.getConnection();
+        Connection connectDB = connectNow.getConnection();
         String full_name = fullName.getText();
         String gender = Sex.getValue();
         String email = Email.getText();
         String username = Username.getText();
         String pass = password.getText();
 
-        String insertFields = "insert into account_user (full_name,gender,username,email" + "``,pass) values ('";
-        String insertValue = full_name + "','" + gender + "','" + email + "','" + username + "','" + pass + "')";
+        String insertFields = "INSERT INTO account_user(full_name,gender,username,email,pass) values ('";
+        String insertValue = full_name + "','" + gender + "','" + username + "','" + email + "','" + pass + "')";
         String insertToRegister = insertFields + insertValue;
         try {
-            Statement statement = connectionDB.createStatement();
+            Statement statement = connectDB.createStatement();
             statement.executeUpdate(insertToRegister);
-            intoHomePage();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                connectionDB.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-    public void intoHomePage(){
-        try{
-            Parent root= FXMLLoader.load(getClass().getResource("Home_Page.fxml"));
-            Stage homeStage = new Stage();
-            homeStage.initStyle(StageStyle.UNDECORATED);
-            homeStage.setScene(new Scene(root,700,500));
-            homeStage.show();
-
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
         }
     }
-
-
-
 
     public void backToLogin(){
         try{
