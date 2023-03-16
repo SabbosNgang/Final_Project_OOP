@@ -30,7 +30,7 @@
                      <graphic>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../java/img/home (1).png" />
+                              <Image url="@../../../../java/img/home (2).png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -112,7 +112,7 @@
                               </ImageView>
                            </graphic>
                         </JFXButton>
-                        <JFXButton contentDisplay="GRAPHIC_ONLY" prefHeight="100.0" prefWidth="100.0">
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#onLogOutClick" prefHeight="100.0" prefWidth="100.0">
                            <graphic>
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

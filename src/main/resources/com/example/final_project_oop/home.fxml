@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -13,5 +19,119 @@
       </Text>
       <Text layoutX="14.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regular health exams and tests can help find problems before they start. They also can help find problems early, when your chances for treatment and cure are better. t, how active you are, and whether you smoke." wrappingWidth="526.1366424560547" />
       <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Which exams and screenings you need depends on your age, health and family history, and lifestyle choices such as what you eat, how active you are, and whether you smoke." wrappingWidth="507.591064453125" />
+      <TabPane layoutX="2.0" layoutY="148.0" prefHeight="524.0" prefWidth="550.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="About Us">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="550.0">
+                     <children>
+                        <ScrollPane layoutY="-1.0" prefHeight="495.0" prefWidth="550.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="839.0" prefWidth="529.0">
+                                 <children>
+                                    <Pane layoutX="18.0" layoutY="499.0" prefHeight="200.0" prefWidth="150.0" style="-fx-background-color: #0093E0; -fx-background-radius: 12;">
+                                       <children>
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do a health check up to avoid health risk " textAlignment="CENTER" wrappingWidth="127.97273254394531" />
+                                          <Text fill="WHITE" layoutX="11.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Better safe than never" textAlignment="CENTER" wrappingWidth="127.97273254394531" />
+                                          <ImageView fitHeight="48.0" fitWidth="72.0" layoutX="50.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../java/img/care.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="193.0" layoutY="499.0" prefHeight="200.0" prefWidth="150.0" style="-fx-background-color: #0093E0; -fx-background-radius: 12;">
+                                       <children>
+                                          <Text fill="WHITE" layoutX="11.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Take the quiz to check with your daily activities" textAlignment="CENTER" wrappingWidth="127.97273254394531" />
+                                          <Text fill="WHITE" layoutX="11.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Without any charge" textAlignment="CENTER" wrappingWidth="127.97273254394531" />
+                                          <ImageView fitHeight="48.0" fitWidth="72.0" layoutX="55.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../java/img/telemedicine1.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="368.0" layoutY="499.0" prefHeight="200.0" prefWidth="150.0" style="-fx-background-color: #0093E0; -fx-background-radius: 12;">
+                                       <children>
+                                          <Text fill="WHITE" layoutX="11.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book an appointment with our doctor" textAlignment="CENTER" wrappingWidth="127.97273254394531" />
+                                          <Text fill="WHITE" layoutX="10.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Without any charge" textAlignment="CENTER" wrappingWidth="127.97273254394531" />
+                                          <ImageView fitHeight="48.0" fitWidth="72.0" layoutX="51.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../java/img/telemedicine3.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Text layoutX="244.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Features">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Pane layoutX="21.0" layoutY="47.0" prefHeight="106.0" prefWidth="510.0">
+                                       <children>
+                                          <Text layoutX="266.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Vision">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="173.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We aimed to provide the checkup services for everyone to improve their daily lifestyle by analyzing on their daily activities " textAlignment="CENTER" wrappingWidth="272.92425537109375" />
+                                          <ImageView fitHeight="114.0" fitWidth="144.0" layoutX="16.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../java/img/telemedicine%20(3).png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="19.0" layoutY="176.0" prefHeight="106.0" prefWidth="510.0">
+                                       <children>
+                                          <Text layoutX="96.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Us">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="2.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This application is created by cadt student in purpose of providing health care system for anyone to test or check their condition" textAlignment="CENTER" wrappingWidth="272.92425537109375" />
+                                          <ImageView fitHeight="114.0" fitWidth="144.0" layoutX="364.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../java/img/telemedicine.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="17.0" layoutY="301.0" prefHeight="106.0" prefWidth="510.0">
+                                       <children>
+                                          <Text layoutX="266.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our Service">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="173.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our platform has the basic quizzy to test health which would cover many of your habit lifestyle for analyzing your healthy state" textAlignment="CENTER" wrappingWidth="272.92425537109375" />
+                                          <ImageView fitHeight="114.0" fitWidth="144.0" layoutX="16.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../../java/img/telemedicine%20(1).png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                    <Text layoutX="83.0" layoutY="757.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We are truely happy to see everyone learn to take care of themselves as well as the one that they care for. We hoope our service could provide many guideline and prescription match your needs" textAlignment="CENTER" wrappingWidth="394.6666259765625" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Contact Us">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Take Quiz">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>

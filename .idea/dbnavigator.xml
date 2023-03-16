@@ -22,7 +22,6 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
       <object connection-id="84216d5a-0243-4ba6-a556-11b7b468a0a9" object-ref="schemas/health_care/tables/account_user" />
-      <object connection-id="84216d5a-0243-4ba6-a556-11b7b468a0a9" object-ref="schemas/health_care/tables/contact_us" />
     </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">

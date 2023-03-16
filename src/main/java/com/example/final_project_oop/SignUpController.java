@@ -55,6 +55,11 @@ public class SignUpController implements Initializable {
     @FXML
     private ChoiceBox<String> Sex;
     private String [] gen = {"Male","Female"};
+    @FXML
+    private TextField date_of_birth;
+    @FXML
+    private TextField phone;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
         Sex.getItems().addAll(gen);
@@ -69,26 +74,27 @@ public class SignUpController implements Initializable {
         String C = Email.getText();
         String D = password.getText();
         String E = confirm_pass.getText();
+        String F = date_of_birth.getText();
+        String G = phone.getText();
 
-        if(D.length()>=6) {
+        if (A.isEmpty() || B.isEmpty() || C.isEmpty() || D.isEmpty() || E.isEmpty()||F.isEmpty()||G.isEmpty()) {
+            createdMessage.setText("Please kindly complete all Fields");
+        }else{
+            if (D.length() >= 6) {
 
-            if (password.getText().equals(confirm_pass.getText())) {
-
-                if (A.isEmpty() || B.isEmpty() || C.isEmpty() || D.isEmpty() || E.isEmpty()) {
-                    createdMessage.setText("Please kindly complete all Fields");
-                } else {
+                if (password.getText().equals(confirm_pass.getText())) {
                     Stage stage = (Stage) cancel_button.getScene().getWindow();
                     stage.close();
                     registerUser();
+                    intoHomePage();
+                    confirmPassMessage.setText("");
+                } else {
+                    confirmPassMessage.setText("Password doesn't match ");
                 }
-                confirmPassMessage.setText("");
             } else {
-                confirmPassMessage.setText("Password doesn't match ");
+                createdMessage.setText("Password must be 6 or more character");
             }
-        }else{
-            createdMessage.setText("Password must be 6 or more character");
         }
-
     }
     public void backOnAction(Event event){
         Stage stage = (Stage) back.getScene().getWindow();
@@ -104,9 +110,11 @@ public class SignUpController implements Initializable {
         String email = Email.getText();
         String username = Username.getText();
         String pass = password.getText();
+        String birth_of_date = date_of_birth.getText();
+        String phone_n = phone.getText();
 
-        String insertFields = "INSERT INTO account_user(full_name,gender,username,email,pass) values ('";
-        String insertValue = full_name + "','" + gender + "','" + username + "','" + email + "','" + pass + "')";
+        String insertFields = "INSERT INTO account_user(full_name,birt_of_date,gender,username,email,phone_num,pass) values ('";
+        String insertValue = full_name + "','" +birth_of_date+ "','" + gender + "','"  + username + "','" + email + "','" + phone_n+"','"+ pass + "')";
         String insertToRegister = insertFields + insertValue;
         try {
             Statement statement = connectDB.createStatement();
@@ -130,7 +138,19 @@ public class SignUpController implements Initializable {
             e.getCause();
         }
     }
+    public void intoHomePage(){
+        try{
+            Parent root= FXMLLoader.load(getClass().getResource("healthManage.fxml"));
+            Stage homeStage = new Stage();
+            homeStage.initStyle(StageStyle.UNDECORATED);
+            homeStage.setScene(new Scene(root,750,670));
+            homeStage.show();
 
+        }catch(Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
 
 
 }
