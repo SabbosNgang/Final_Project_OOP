@@ -48,7 +48,7 @@ public class Management_Controller {
     }
 
     public void onCalenderClick(javafx.event.ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Management_Main.class.getResource("calender.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Management.class.getResource("calender.fxml"));
         borderPane.getChildren().remove(borderPane.getCenter()); ////remove existing fxml from center.
         borderPane.setCenter(fxmlLoader.load());
     }
