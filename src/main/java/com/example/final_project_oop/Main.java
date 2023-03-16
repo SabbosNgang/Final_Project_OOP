@@ -12,13 +12,13 @@ public class Main extends Application {
     }
 
     public void start(Stage primaryStage) throws Exception {
-        Parent root = (Parent) FXMLLoader.load(this.getClass().getResource("Log_In.fxml"));
+        Parent root = (Parent) FXMLLoader.load(this.getClass().getResource("SignUp.fxml"));
         primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.setScene(new Scene(root, 700.0, 500.0));
         primaryStage.show();
     }
 
     public static void main(String[] args) {
-        launch(args);
+        launch();
     }
 }
