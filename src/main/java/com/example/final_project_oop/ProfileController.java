@@ -1,19 +1,25 @@
 package com.example.final_project_oop;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ResourceBundle;
 
 
-public class ProfileController extends Management_Controller{
+public class ProfileController implements Initializable {
+    @FXML
+    private AnchorPane ShoProfile;
     @FXML
     private Label fTel, fBirthdate,lbUserName, fName, fEmail, fU_Name;
     @FXML
@@ -25,9 +31,8 @@ public class ProfileController extends Management_Controller{
         stage.close();
     }
     public void deleteOnAction(MouseEvent mouseEvent) {
-        Showdata();
     }
-    public void Showdata(){
+    public void initialize(URL url, ResourceBundle resourceBundle){
         DBConnection connectNow = new DBConnection();
         Connection connectDB = connectNow.getConnection();
         try {

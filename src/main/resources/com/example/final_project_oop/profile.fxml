@@ -24,7 +24,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="92.0" layoutY="454.0" prefHeight="30.0" prefWidth="126.0" text="Email            :">
+      <Label layoutX="92.0" layoutY="454.0" prefHeight="30.0" prefWidth="126.0" text="Email             :">
          <font>
             <Font size="20.0" />
          </font>
@@ -34,7 +34,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="92.0" layoutY="397.0" text="User Nam     :">
+      <Label layoutX="92.0" layoutY="397.0" text="User Name    :">
          <font>
             <Font size="20.0" />
          </font>
