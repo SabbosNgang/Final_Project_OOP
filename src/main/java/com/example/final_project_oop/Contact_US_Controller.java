@@ -23,7 +23,7 @@ public class Contact_US_Controller {
 
     public void SubmitOnAction(ActionEvent actionEvent) throws IOException {
         contactUser();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Calendar.class.getResource("Contact_US.fxml"));
         Stage stage = (Stage) btnSubmit.getScene().getWindow();
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Contact US");

@@ -3,10 +3,11 @@ package com.example.final_project_oop;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+
 public class DBConnection {
     public Connection databaseLink;
     public  Connection getConnection(){
-        String databaseName = "h_care";
+        String databaseName = "health_care";
         String databaseUser = "root";
         String databasePw = "";
         String url ="jdbc:mysql://localhost/" + databaseName;
