@@ -102,10 +102,10 @@ public class LoggedInController implements Initializable {
     }
     public void intoHomePage(){
         try{
-            Parent root= FXMLLoader.load(getClass().getResource("Home_Page.fxml"));
+            Parent root= FXMLLoader.load(getClass().getResource("healthManage.fxml"));
             Stage homeStage = new Stage();
             homeStage.initStyle(StageStyle.UNDECORATED);
-            homeStage.setScene(new Scene(root,700,500));
+            homeStage.setScene(new Scene(root,750,670));
             homeStage.show();
 
         }catch(Exception e){
