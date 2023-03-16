@@ -29,20 +29,20 @@ public class Management_Controller {
     }
 
     public void onHomeClick(javafx.event.ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Management_Main.class.getResource("home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Management.class.getResource("home.fxml"));
         borderPane.getChildren().remove(borderPane.getCenter()); ////remove existing fxml from center.
         borderPane.setCenter(fxmlLoader.load());
     }
 
 
     public void onBookClick(javafx.event.ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Management_Main.class.getResource("book.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Management.class.getResource("book.fxml"));
         borderPane.getChildren().remove(borderPane.getCenter()); ////remove existing fxml from center.
         borderPane.setCenter(fxmlLoader.load());
     }
 
     public void onDrugClick(javafx.event.ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Management_Main.class.getResource("pharmacy.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Management.class.getResource("pharmacy.fxml"));
         borderPane.getChildren().remove(borderPane.getCenter()); ////remove existing fxml from center.
         borderPane.setCenter(fxmlLoader.load());
     }
@@ -54,7 +54,7 @@ public class Management_Controller {
     }
 
     public void onProfileClick(javafx.event.ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Management_Main.class.getResource("profile.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Management.class.getResource("profile.fxml"));
         borderPane.getChildren().remove(borderPane.getCenter()); ////remove existing fxml from center.
         borderPane.setCenter(fxmlLoader.load());
     }
