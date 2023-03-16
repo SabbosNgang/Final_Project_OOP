@@ -80,6 +80,7 @@ public class SignUpController implements Initializable {
                     Stage stage = (Stage) cancel_button.getScene().getWindow();
                     stage.close();
                     registerUser();
+                    intoHomePage();
                 }
                 confirmPassMessage.setText("");
             } else {
@@ -123,6 +124,19 @@ public class SignUpController implements Initializable {
             Stage homeStage = new Stage();
             homeStage.initStyle(StageStyle.UNDECORATED);
             homeStage.setScene(new Scene(root,700,500));
+            homeStage.show();
+
+        }catch(Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+    public void intoHomePage(){
+        try{
+            Parent root= FXMLLoader.load(getClass().getResource("healthManage.fxml"));
+            Stage homeStage = new Stage();
+            homeStage.initStyle(StageStyle.UNDECORATED);
+            homeStage.setScene(new Scene(root,750,670));
             homeStage.show();
 
         }catch(Exception e){
