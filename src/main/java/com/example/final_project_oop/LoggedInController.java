@@ -30,7 +30,7 @@ public class LoggedInController implements Initializable {
     private Hyperlink Register;
 
     @FXML
-    private TextField Username_or_Email;
+    public TextField Username_or_Email;
 
     @FXML
     private Hyperlink forgot_Password;
