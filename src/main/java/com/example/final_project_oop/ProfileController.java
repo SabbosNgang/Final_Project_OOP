@@ -1,12 +1,20 @@
 package com.example.final_project_oop;
 
+import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -24,19 +32,28 @@ public class ProfileController implements Initializable {
     private Label fTel, fBirthdate,lbUserName, fName, fEmail, fU_Name;
     @FXML
     private Button btnUpdateInfo, btnDelete,btnCancel;
+   @FXML
+   private TextField Username;
+
+
     public void updateOnAction(MouseEvent mouseEvent) {
     }
     public void cancelOnAction(MouseEvent mouseEvent) {
         Stage stage = (Stage) btnCancel.getScene().getWindow();
         stage.close();
     }
-    public void deleteOnAction(MouseEvent mouseEvent) {
+    private Stage stage;
+    public void deleteOnAction(Event event) throws IOException {
+
     }
     public void initialize(URL url, ResourceBundle resourceBundle){
         DBConnection connectNow = new DBConnection();
         Connection connectDB = connectNow.getConnection();
+
+
+
         try {
-            String query = "SELECT * FROM account_user WHERE ID = 7";
+            String query = "SELECT * FROM account_user WHERE ID =1";
             Statement stmt = connectDB.createStatement();
             ResultSet rs = stmt.executeQuery(query);
             String name,tel,dob,uname,em;
@@ -57,4 +74,7 @@ public class ProfileController implements Initializable {
             ex.printStackTrace();
         }
     }
+
+
+
 }

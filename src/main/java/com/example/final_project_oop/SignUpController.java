@@ -51,7 +51,7 @@ public class SignUpController implements Initializable {
     private Button register;
 
     @FXML
-    private TextField Username;
+    public TextField Username;
     @FXML
     private ChoiceBox<String> Sex;
     private String [] gen = {"Male","Female"};
