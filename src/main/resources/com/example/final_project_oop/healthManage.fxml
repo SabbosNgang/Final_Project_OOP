@@ -11,13 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="670.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_oop.Management_Controller">
+<AnchorPane prefHeight="670.0" prefWidth="750.0" stylesheets="/com/example/final_project_oop/Stylesheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final_project_oop.Management_Controller">
    <children>
       <BorderPane fx:id="borderPane" prefHeight="670.0" prefWidth="750.0">
          <left>
-            <VBox prefHeight="500.0" prefWidth="200.0" style="-fx-border-color: grey;" BorderPane.alignment="CENTER">
+            <VBox prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #0093E0;" BorderPane.alignment="CENTER">
                <children>
-                  <Pane prefHeight="130.0" prefWidth="200.0" style="-fx-border-color: #0093E0;">
+                  <Pane prefHeight="130.0" prefWidth="200.0">
                      <children>
                         <ImageView fitHeight="55.0" fitWidth="147.0" layoutX="25.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -26,7 +26,7 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <JFXButton alignment="BASELINE_LEFT" onAction="#onHomeClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" text="    Home" textAlignment="CENTER">
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#onHomeClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" styleClass="sideBarItem" text="    Home" textAlignment="CENTER" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -47,7 +47,7 @@
                         <Insets bottom="10.0" left="10.0" top="10.0" />
                      </padding>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" onAction="#onBookClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" text="    Book" textAlignment="CENTER">
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#onBookClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" styleClass="sideBarItem" text="    Book" textAlignment="CENTER" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -65,7 +65,7 @@
                         <Insets bottom="10.0" left="10.0" top="10.0" />
                      </padding>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" onAction="#onDrugClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" text="    Pharmacy" textAlignment="CENTER">
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#onDrugClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" styleClass="sideBarItem" text="    Pharmacy" textAlignment="CENTER" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -83,7 +83,7 @@
                         <Insets bottom="10.0" left="10.0" top="10.0" />
                      </padding>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" onAction="#onCalenderClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" text="    Calender" textAlignment="CENTER">
+                  <JFXButton alignment="BASELINE_LEFT" onAction="#onCalenderClick" prefHeight="50.0" prefWidth="201.0" style="-fx-border-color: #0093E0;" styleClass="sideBarItem" text="    Calender" textAlignment="CENTER" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -103,7 +103,7 @@
                   </JFXButton>
                   <HBox prefHeight="80.0" prefWidth="200.0">
                      <children>
-                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#onProfileClick" prefHeight="100.0" prefWidth="100.0" text="Button">
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#onProfileClick" prefHeight="100.0" prefWidth="100.0" styleClass="sideBarItem" text="Button">
                            <graphic>
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -112,7 +112,7 @@
                               </ImageView>
                            </graphic>
                         </JFXButton>
-                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#onLogOutClick" prefHeight="100.0" prefWidth="100.0">
+                        <JFXButton contentDisplay="GRAPHIC_ONLY" onAction="#onLogOutClick" prefHeight="100.0" prefWidth="100.0" styleClass="sideBarItem">
                            <graphic>
                               <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

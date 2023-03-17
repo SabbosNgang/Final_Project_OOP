@@ -1,6 +1,7 @@
 package com.example.final_project_oop;
 
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -54,5 +55,9 @@ public class Management_Controller  {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.show();
+    }
+
+    public void onStartClick(ActionEvent actionEvent) {
+
     }
 }
